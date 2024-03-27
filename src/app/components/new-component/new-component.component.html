@@ -1,0 +1,113 @@
+<ul class="nav">
+    <li onclick="showLogin()">Login</li>
+    <li onclick="showSignup()">Entrar</li>
+    <li onclick="showForgotPassword()">Esqueci a Senha</li>
+    <li onclick="showSubscribe()">Inscrever-se</li>
+    <li onclick="showContactUs()">Contate-nos</li>
+  </ul>
+  <div class="wrapper">
+    <div class="rec-prism">
+      <div class="face face-top">
+        <div class="content">
+          <h2>Inscrever-se</h2>
+          <small>Digite o seu e-mail!</small>
+          <form onsubmit="event.preventDefault()">
+            <div class="field-wrapper">
+              <input type="text" name="email" placeholder="email">
+              <label>e-mail</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="submit" onclick="showObrigado()">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="face face-front">
+        <div class="content">
+          <h2>Logar</h2>
+          <form onsubmit="event.preventDefault()">
+            <div class="field-wrapper">
+              <input type="text" name="username" placeholder="username">
+              <label>usuário</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="password" name="password" placeholder="password" autocomplete="new-password">
+              <label>senha</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="submit" onclick="showObrigado()">
+            </div>
+            <span class="psw" onclick="showEsqueciSenha()">Fsqueceu a Senha?  </span>
+            <span class="signup" onclick="showSignup()">Ainda não inscrito? Se inscreva!</span>
+          </form>
+        </div>
+      </div>
+      <div class="face face-back">
+        <div class="content">
+          <h2>Esqueceu a senha?</h2>
+          <small>Digite o seu e-mail para que possamos enviar um email de recuperação</small>
+          <form onsubmit="event.preventDefault()">
+            <div class="field-wrapper">
+              <input type="text" name="email" placeholder="email">
+              <label>e-mail</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="submit" onclick="showObrigado()">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="face face-right">
+        <div class="content">
+          <h2>Entrar</h2>
+          <form onsubmit="event.preventDefault()">
+            <div class="field-wrapper">
+              <input type="text" name="email" placeholder="email">
+              <label>e-mail</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="senha" name="senha" placeholder="senha" autocomplete="nova-senha">
+              <label>senha</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="senha" name="senha2" placeholder="senha" autocomplete="nova-senha">
+              <label>digite a senha novamente</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="submit" onclick="showObrigado">
+            </div>
+            <span class="singin" onclick="showLogin()">Já é um usuário? Entre!</span>
+          </form>
+        </div>
+      </div>
+      <div class="face face-left">
+        <div class="content">
+          <h2>Contate-nos</h2>
+          <form onsubmit="event.preventDefault()">
+            <div class="field-wrapper">
+              <input type="text" name="name" placeholder="name">
+              <label>Name</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="text" name="email" placeholder="email">
+              <label>e-mail</label>
+            </div>
+            <div class="field-wrapper">
+              <textarea placeholder="sua mensagem"></textarea>
+              <label>sua mensagem</label>
+            </div>
+            <div class="field-wrapper">
+              <input type="submit" onclick="showObrigado()">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="face face-bottom">
+        <div class="content">
+          <div class="thank-you-msg">
+            Obrigado!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
